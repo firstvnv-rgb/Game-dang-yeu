@@ -195,7 +195,7 @@
             if (husband.x < 0) husband.x = 0;
             if (husband.x > canvas.width - husband.width) husband.x = canvas.width - husband.width;
 
-            // 1. Vẽ Người chồng (Dùng ảnh thật chong.png)
+            // 1. Vẽ Người chồng (Dùng ảnh thật chong.png.heic)
             try {
                 ctx.drawImage(husbandImg, husband.x, husband.y, husband.width, husband.height);
             } catch (e) {
@@ -217,7 +217,7 @@
                 let currentType = ITEM_TYPES[item.type];
 
                 if (item.type === 'WIFE') {
-                    // Vẽ Ảnh thật của vợ (vo.png)
+                    // Vẽ Ảnh thật của vợ (vo.png.heic)
                     try {
                         ctx.drawImage(wifeImg, item.x, item.y, item.size, item.size);
                     } catch (e) {
